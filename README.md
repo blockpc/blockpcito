@@ -130,6 +130,12 @@ Packages/
 ```
 This command run `php artisan optimize --quiet`
 
+### Create Package
+
+with command `php artisan blockpc:package-delete` you can delete your own packages folder
+
+### Other
+
 Notes:  
 - After add a new route in the web.php, you should run the command `php artisan route:clear`
 - You must delete file `.gitignore` in packages folder  
