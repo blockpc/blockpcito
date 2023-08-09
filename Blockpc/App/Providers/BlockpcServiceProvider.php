@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Blockpc\App\Providers;
 
 use Blockpc\App\Commands\CreatePackageCommand;
+use Blockpc\App\Commands\DeletePackageCommand;
 use Blockpc\App\Http\Livewire\Notification\Pusher;
 use Blockpc\App\Http\Livewire\Toast;
 use Blockpc\App\Middlewares\DevelopmentAccess;
@@ -83,7 +84,8 @@ final class BlockpcServiceProvider extends ServiceProvider
 
 		if ($this->app->runningInConsole()) {
 			$this->commands([
-				CreatePackageCommand::class
+				CreatePackageCommand::class,
+				DeletePackageCommand::class
 			]);
 		}
 
