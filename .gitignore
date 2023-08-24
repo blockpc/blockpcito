@@ -7,7 +7,7 @@
 .env.backup
 .phpunit.database.checkum
 .phpunit.result.cache
-.phpunit.cache
+/.phpunit.cache
 Homestead.json
 Homestead.yaml
 npm-debug.log
