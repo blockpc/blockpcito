@@ -57,7 +57,7 @@ final class ChangePasswordUserTest extends TestBase
             ->assertHasErrors([$field => $rule]);
     }
 
-    public function validationRules()
+    public static function validationRules()
     {
         return [
             'token is null' => ['token', null, 'required'],

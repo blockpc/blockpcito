@@ -68,7 +68,7 @@ final class CretaeRoleTest extends TestBase
             ->assertHasErrors([$field => $rule]);
     }
 
-    public function validationRules()
+    public static function validationRules()
     {
         return [
             'role name is required' => ['role.name', null, 'required'],

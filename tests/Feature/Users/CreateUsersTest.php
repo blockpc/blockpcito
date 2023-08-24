@@ -76,7 +76,7 @@ final class CreateUsersTest extends TestBase
             ->assertHasErrors([$field => $rule]);
     }
 
-    public function validationRules()
+    public static function validationRules()
     {
         return [
             'user name is null' => ['user.name', null, 'required'],

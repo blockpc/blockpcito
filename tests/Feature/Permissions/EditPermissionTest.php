@@ -85,7 +85,7 @@ final class EditPermissionTest extends TestBase
         ]);
     }
 
-    public function validationRules()
+    public static function validationRules()
     {
         return [
             'permission display name is required' => ['permission.display_name', null, 'required'],
